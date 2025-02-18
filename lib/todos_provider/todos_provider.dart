@@ -67,6 +67,7 @@ class TodosProvider with ChangeNotifier {
     try {
       await dbHelper.insertTodo(todo);
       _created = true;
+      getTodos();
     } catch (e) {
       // Handle error if needed.
       _created = false;
