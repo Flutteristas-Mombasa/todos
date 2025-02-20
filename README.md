@@ -3,7 +3,7 @@
 A simple Flutter-based to-do application built by Flutteristas Mombasa. This project demonstrates key Flutter concepts such as state management, widget composition, and navigation through a functional to-do list application.
 
 <video width="320" height="240" controls>
-  <source src="video.mp4" type="video/mp4">
+   <source src="https://github.com/Flutteristas-Mombasa/todos/blob/main/video.mp4" type="video/mp4">
 </video>
 
 ## Table of Contents
