@@ -42,6 +42,9 @@ dependencies:
   path_provider: ^2.1.5
   sqflite_common_ffi_web:
   toastification: ^2.3.0
+  bloc: ^9.0.0
+  flutter_bloc: ^9.0.0
+  equatable: ^2.0.7
 
 dev_dependencies:
   sqflite_common_ffi:

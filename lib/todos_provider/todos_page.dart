@@ -62,17 +62,22 @@ class TodosPage extends StatelessWidget {
                             .deleteATodo(todos[i].id!);
                       });
                     },
-                    child: ListTile(
-                      onTap: () {
-                        // Navigate to the TodosCreatePage, passing the selected todo item.
-                        Navigator.of(context).push(MaterialPageRoute(
-                            builder: (_) => TodosCreatePage(
-                                  todoModel: todos[i],
-                                )));
-                      },
-                      subtitle: Text(todos[i].description ?? ''),
-                      leading: Text('${todos[i].id}'),
-                      title: Text(todos[i].title ?? ''),
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: ListTile(
+                        tileColor:
+                            todos[i].completed == 1 ? Colors.greenAccent : null,
+                        onTap: () {
+                          // Navigate to the TodosCreatePage, passing the selected todo item.
+                          Navigator.of(context).push(MaterialPageRoute(
+                              builder: (_) => TodosCreatePage(
+                                    todoModel: todos[i],
+                                  )));
+                        },
+                        subtitle: Text(todos[i].description ?? ''),
+                        leading: Text('${todos[i].id}'),
+                        title: Text(todos[i].title ?? ''),
+                      ),
                     ),
                   )),
         );

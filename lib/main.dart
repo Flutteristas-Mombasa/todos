@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:todos/todos_bloc/todos_page_bloc.dart';
 import 'package:todos/todos_provider/todos_page.dart';
 import 'package:todos/todos_provider/todos_provider.dart';
 
@@ -49,6 +50,11 @@ class HomePage extends StatelessWidget {
             title: Text('Todos Provider'),
           ),
           ListTile(
+            onTap: () {
+              //TodosPageBloc
+              Navigator.of(context)
+                  .push(MaterialPageRoute(builder: (_) => TodosPageBloc()));
+            },
             title: Text('Todos Bloc'),
           ),
         ],
